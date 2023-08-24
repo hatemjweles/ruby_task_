@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Invsdata</h1>
+
+<div id="invsdata">
+  <% @invsdata.each do |invsdatum| %>
+    <%= render invsdatum %>
+    <p>
+      <%= link_to "Show this invsdatum", invsdatum %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New invsdatum", new_invsdatum_path %>

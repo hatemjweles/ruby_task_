@@ -1,0 +1,29 @@
+<%= form_with(model: invsdatum) do |form| %>
+  <% if invsdatum.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(invsdatum.errors.count, "error") %> prohibited this invsdatum from being saved:</h2>
+
+      <ul>
+        <% invsdatum.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :original_string, style: "display: block" %>
+    <%= form.text_field :original_string %>
+  </div>
+
+ <!--  <div>
+    <%= form.label :inverse_string, style: "display: block" %>
+    <%= form.text_field :inverse_string %>
+  </div>
+ -->
+
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

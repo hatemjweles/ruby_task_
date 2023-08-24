@@ -1,0 +1,4 @@
+class Invsdatum < ApplicationRecord
+
+end
+

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @invsdatum %>
+
+<div>
+  <%= link_to "Edit this invsdatum", edit_invsdatum_path(@invsdatum) %> |
+  <%= link_to "Back to invsdata", invsdata_path %>
+
+  <%= button_to "Destroy this invsdatum", @invsdatum, method: :delete %>
+</div>
